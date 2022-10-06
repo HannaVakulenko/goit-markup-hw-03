@@ -32,6 +32,10 @@ ul, ol {
   padding-left: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 img {
   display: block;
 }
@@ -42,6 +46,8 @@ body {
 }
 /* убирає маркери в ненумерованих списках */
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 /* убирає нижнє підкрислення в посиланнях */
@@ -77,39 +83,76 @@ p {
   background-color: var(--white-logo-color);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
 .header-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: var(--accent-color);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  
 }
 
 .header-logo .span-color {
   color: var(--logo-color);
 }
 
-.header-item {
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.item .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
+.header-address {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-address .item + .item {
+    margin-left: 50px;
+}
+
+
 .header-address .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  
 }
 
 .link:hover, .link:focus {
   color: var(--accent-color);
 }
 
-.current {
+.link.current {
   color: var(--accent-color);
 }
 
@@ -119,13 +162,14 @@ p {
 }
 
 .hero-title {
+  color: var(--white-logo-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-logo-color);
+  
 }
 
 .hero-btn {
@@ -240,7 +284,6 @@ section.team {
 }
 
 .ftr-address {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -248,7 +291,6 @@ section.team {
 }
 
 .ftr-contact {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
