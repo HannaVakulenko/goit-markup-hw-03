@@ -103,6 +103,7 @@ p {
 /* -----header-------- */
 .header {
   background-color: var(--white-logo-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -168,21 +169,21 @@ p {
 /* ------hero-------- */
 .hero {
   background-color: var(--hero-ftr-bgc-color);
-}
-
-.hero .container {
-  padding: 200px 252px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
+  margin: 0 auto;
   margin-bottom: 30px;
-  text-align: center;
+  width: 696px;
   color: var(--white-logo-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hero-btn {
@@ -205,14 +206,14 @@ p {
   background-color: var(--btn-hover-focus);
 }
 
-/* ----Work---- */
-.work {
+/* ----feature---- */
+.feature {
+  padding-bottom: 0;
   background-color: var(--primary-bgc-color);
 }
 
 .features {
   display: flex;
-  padding-bottom: 94px;
   gap: 30px;
   }
 
@@ -236,6 +237,11 @@ p {
   letter-spacing: 0.03em;
   text-align: start;
   color: var(--primary-text-color);
+}
+
+/* ----Work---- */
+.work {
+  background-color: var(--primary-bgc-color);
 }
 
 .work-title {
@@ -283,7 +289,7 @@ p {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.card-info {
+.team-card .card-info {
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 0px 0px 4px 4px; 
@@ -311,10 +317,7 @@ p {
 
 .footer {
   background-color: var(--hero-ftr-bgc-color);
-}
-
-.footer .container {
-  padding: 60px 15px;
+  padding: 60px 0;
 }
 
 .ftr-logo {
