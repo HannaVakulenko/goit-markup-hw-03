@@ -335,17 +335,21 @@ p {
 }
 
 .ftr-address {
-  display: block;
-  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.ftr-location {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--white-logo-color);
 }
 
-.ftr-contact {
-  display: block;
-  padding-top: 9px;
+.ftr-contact .item {
+  margin-top: 9px;
+}
+
+.ftr-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
